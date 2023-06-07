@@ -119,3 +119,59 @@ body {
     background: transparent;
     color: var(--primaryColor);
 }
+
+
+.products {
+    padding: 4rem 0;
+}
+
+.section-title h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: var(--mainSpacing);
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.product-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.product-img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.bag-btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.4rem 1.2rem;
+    background: var(--primaryColor);
+    border: none;
+    position: absolute;
+    top: 75%;
+    cursor: pointer;
+    right: -125px;
+    transition: var(--mainTransition);
+}
+
+.fa-cart-plus {
+    margin-inline: 0.25rem;
+}
+
+.img-container:hover > .bag-btn  {
+    right: 0;
+}
