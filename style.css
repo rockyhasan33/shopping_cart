@@ -1,0 +1,121 @@
+
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.2rem;
+    --mainTransition: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    scroll-behavior: smooth;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: var(--mainGrey);
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.nav-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+}
+
+.end-logo {
+    color: var(--primaryColor);
+}
+
+.cart-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.cart-items {
+    position: absolute;
+    color: #fff;
+    background: var(--primaryColor);
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    top: -8px;
+    right: -9px;
+
+}
+
+.hero {
+    min-height: calc(100vh - 70px);
+    background: url(./images/hero.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    /* margin-inline: 1rem; */
+}
+
+.banner-title {
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+}
+
+.banner-btn {
+    padding: 1rem 3rem;
+    background:  var(--primaryColor) ;
+    border: 1px solid black;
+    border-radius: 5px;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.banner-btn:hover {
+    background: transparent;
+    color: var(--primaryColor);
+}
