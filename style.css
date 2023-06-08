@@ -30,7 +30,7 @@ body {
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1;
 }
 
 .nav-center {
@@ -208,4 +208,136 @@ body {
 
 .img-container:hover > .product-img {
     opacity: 0.7;
+}
+
+.cart-overlay {
+   
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: transparent;
+    transition: var(--mainTransition);
+    background: rgb(240, 157, 81, 0.5);
+    z-index: 2;
+    visibility:hidden;
+    /* transition: var(--mainTransition); */
+}
+
+
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background: var(--mainWhite);
+    z-index: 3;
+    background: rgb(231, 226, 221);
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: var(--mainTransition);
+}
+
+
+.overlay-visible {
+    visibility: visible;
+}
+
+.cart-collapse {
+    transform: translateX(0);
+}
+
+.close-cart {
+    text-align: left;
+    /* margin-left: 1.5rem; */
+    
+    background: var(--mainBlack);
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    color: #fff;
+}
+
+.close-cart:hover {
+    background: red;
+}
+
+
+
+.cart h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-block: 2rem;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item {
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    margin: 1.5rem 0;
+    grid-column-gap: 1.5rem;
+    
+}
+
+.cart-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-item h4 {
+    letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
+    margin-block: 0.25rem;
+}
+
+.cart-item .remove-item {
+    color: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.cart-item div p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.cart-item div h5 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cart-item div i {
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--primaryColor);
+}
+
+.cart-footer {
+    text-align: center;
+}
+
+.cart-footer h3 {
+    margin-block: 2rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .cart {
+        width: 30vw;
+        min-width: 450px;
+    }
 }
