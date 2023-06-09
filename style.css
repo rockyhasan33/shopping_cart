@@ -233,11 +233,11 @@ body {
     right: 0;
     height: 100%;
     width: 100%;
+    padding: 2rem;
     overflow: scroll;
     background: var(--mainWhite);
     z-index: 3;
     background: rgb(231, 226, 221);
-    padding: 2rem;
     transform: translateX(100%);
     transition: var(--mainTransition);
 }
@@ -275,10 +275,7 @@ body {
     margin-block: 2rem;
 }
 
-.cart-content {
-    display: flex;
-    justify-content: center;
-}
+
 
 .cart-item {
     
