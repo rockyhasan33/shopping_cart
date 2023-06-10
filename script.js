@@ -2,6 +2,7 @@ const cartOverlay = document.querySelector('.cart-overlay');
 const cart = document.querySelector('.cart') 
 const cartBtn = document.querySelector('.cart-btn');
 const closeBtn = document.querySelector('.close-cart');
+const productCenter = document.querySelector('.product-center')
 
 
 cartBtn.addEventListener('click',() => {
@@ -22,4 +23,11 @@ closeBtn.addEventListener('click', () => {
     cart.classList.remove('cart-collapse');
     cartOverlay.classList.remove('overlay-visible');
 })
+
+
+
+
+
+
+
 

@@ -1,0 +1,86 @@
+{
+    "items":[
+        {
+            "sys": {"id": "1"},
+            "fields": {
+                "title": "queen panel bed",
+                "price": 10.99,
+                "image": {"fields": { "file": {
+                    "url": "./images/item-1.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "2"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-2.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "3"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-3.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "4"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-4.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "5"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-5.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "6"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-6.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "7"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-7.jpg"
+                } } }
+            }
+        },
+        {
+            "sys": {"id": "8"},
+            "fields": {
+                "title": "king panel bed",
+                "price": 12.99,
+                "image": {"fields":{ "file": {
+                    "url":"./images/item-8.jpg"
+                } } }
+            }
+        }
+        
+
+    ]
+}
